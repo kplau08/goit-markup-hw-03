@@ -33,8 +33,8 @@
 }
 .body {
   font-family: "railway", "roboto";
-  width: 1440px;
-  height: 2592px;
+  max-width: 1440px;
+  max-height: 2592px;
 }
 
 a {
@@ -56,6 +56,7 @@ h2 {
 /* END OF GENERAL */
 
 /* START OF NAV BAR */
+
 .logo-web {
   color: var(--iris);
   font-family: Raleway;
@@ -82,7 +83,7 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-.pages {
+.pages-link {
   color: var(--navy-blue);
   /* Body Medium */
   font-family: Roboto;
@@ -105,15 +106,55 @@ ul {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+
+.navigation {
+  display: flex;
+  height: 72px;
+  width: 1440px;
+  align-items: baseline;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin: 25.5px 76px 25.5px 156px;
+}
+
+.pages-link {
+  padding-right: 40px;
+}
+
+.contact {
+  margin-left: 332px;
+}
+
+.contact-details {
+  padding-right: 40px;
+}
 /* END OF NAV BAR */
 
 /* START OF HERO SECTION */
-.flag {
+.hero {
   background-color: var(--navy-blue);
-  width: 1440px;
+  display: inline-block;
+  max-width: 1440px;
+  max-height: 600px;
 }
 
-.flag h1 {
+.hero-slogan {
+  margin: 188px 472px 292px;
+  max-height: 120px;
+  max-width: 496px;
+}
+h1 {
   color: var(--white);
   text-align: center;
   /* Header 1 */
@@ -125,11 +166,12 @@ ul {
   letter-spacing: 1.12px;
 }
 
-.flag button {
+.hero button {
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--WHITE);
+  color: var(--white);
+  padding: 16px 32px;
 
   /* Button Text */
   font-family: Roboto;
@@ -139,10 +181,10 @@ ul {
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
 }
-/* EMD OF HERO SECTION */
+/* END OF HERO SECTION */
 
 /* START OF PURPOSE SECTION */
-.purpose li {
+.values li {
   color: var(--navy-blue);
   /* Header 3 */
   font-family: Roboto;
@@ -154,7 +196,7 @@ ul {
   padding: 0;
 }
 
-.purpose p {
+.values p {
   color: var(--slate);
   /* Body */
   font-family: Roboto;
@@ -166,6 +208,8 @@ ul {
 }
 
 /* START OF WHAT ARE WE DOING */
+.function {
+}
 
 /* START OF TEAM SECTION */
 h4 {
@@ -189,6 +233,11 @@ h4 {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+
+.team {
+  display: flex;
+  flex: 1;
+}
 /* END OF TEAM SECTION */
 
 /* START OF FOOTER SECTION */
@@ -197,7 +246,7 @@ h4 {
   width: 1440px;
 }
 
-.logo-studio-footer {
+.footer-logo-studio-footer {
   color: var(--cloud);
   font-family: Raleway;
   font-size: 18px;
