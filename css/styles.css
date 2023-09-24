@@ -37,6 +37,10 @@
   max-height: 2592px;
 }
 
+.main {
+  width: 1440px;
+}
+
 a {
   text-decoration: none;
 }
@@ -81,7 +85,6 @@ h2 {
 
 ul {
   list-style-type: none;
-  padding: 0;
 }
 .pages-link {
   color: var(--navy-blue);
@@ -110,7 +113,7 @@ ul {
 .navigation {
   display: flex;
   height: 72px;
-  width: 1440px;
+  max-width: 1440px;
   align-items: baseline;
 }
 
@@ -183,7 +186,7 @@ h1 {
 }
 /* END OF HERO SECTION */
 
-/* START OF PURPOSE SECTION */
+/* START OF VALUES SECTION */
 .values li {
   color: var(--navy-blue);
   /* Header 3 */
@@ -206,6 +209,22 @@ h1 {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+
+/* .values-card-1 {
+  width: 264px;
+  height: 104px;
+}
+
+.values-card-2 {
+  width: 264px;
+  height: 104px;
+}
+
+.values-card-3 {
+  width: 264px;
+  height: 104px;
+} */
+/* END OF VALUES SECTION */
 
 /* START OF WHAT ARE WE DOING */
 .function {
