@@ -34,8 +34,8 @@
 
 body {
   font-family: "railway", "roboto";
-  max-width: 1440px;
-  max-height: 2592px;
+  min-width: 1440px;
+  min-height: 2592px;
 }
 
 a {
@@ -44,7 +44,6 @@ a {
 
 h2 {
   color: var(--navy-blue);
-  text-align: center;
   /* Header 2 */
   font-family: Roboto;
   font-size: 36px;
@@ -53,6 +52,7 @@ h2 {
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  text-align: center;
 }
 /* END OF GENERAL */
 
@@ -97,7 +97,6 @@ ul {
 
 .contact-details {
   color: var(--slate);
-
   /* Body */
   font-family: Roboto;
   font-size: 16px;
@@ -110,10 +109,13 @@ ul {
 .navigation {
   display: flex;
   height: 72px;
-  max-width: 1440px;
   align-items: baseline;
 }
 
+.header-link {
+  display: flex;
+  flex-direction: row;
+}
 .pages {
   display: flex;
   flex-direction: row;
@@ -182,7 +184,7 @@ h1 {
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   position: absolute;
-  width: 200px;
+  width: 180px;
   margin: 356px 635px 188px;
 }
 /* END OF HERO SECTION */
@@ -217,6 +219,9 @@ h1 {
   margin: 120px 156px 120px 156px;
 }
 
+.main-content {
+  width: 1440px;
+}
 .values-card-1 {
   width: 264px;
   height: 104px;
@@ -231,6 +236,12 @@ h1 {
   width: 264px;
   height: 104px;
 }
+
+.values-card-4 {
+  width: 264px;
+  height: 104px;
+}
+
 /* END OF VALUES SECTION */
 
 /* START OF WHAT ARE WE DOING */
@@ -267,7 +278,7 @@ h4 {
 .team {
   background-color: var(--cloud);
   max-width: 1440px;
-  padding-bottom:120px;
+  padding-bottom: 120px;
 }
 
 .team > .team-sub-title {
@@ -275,7 +286,6 @@ h4 {
   padding-top: 120px;
   padding-bottom: 72px;
   padding-left: 639px;
-  justify-content: baseline;
   align-items: baseline;
 }
 
@@ -286,10 +296,9 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding-bottom:32px;
+  padding-bottom: 32px;
 
-
-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -306,13 +315,13 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   gap: 8px;
 
- border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin-right: 24px;
-    padding-bottom:32px;
+  padding-bottom: 32px;
 }
 .team-card-3 {
   display: inline-flex;
@@ -320,15 +329,15 @@ border-radius: 0px 0px 4px 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px; */
+  gap: 8px;
 
- border-radius: 0px 0px 4px 4px;
-  background: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  border-radius: 0 0 4px 4px;
+  background-color: var(--white);
+  box-shadow: 0 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin-right: 24px;
-    padding-bottom:32px;
+  padding-bottom: 32px;
 }
 .team-card-4 {
   display: inline-flex;
@@ -338,14 +347,13 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   gap: 8px;
 
- border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-      padding-bottom:32px;
+  padding-bottom: 32px;
 }
-
 
 /* END OF TEAM SECTION */
 
@@ -380,7 +388,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-text {
-  margin-top: 101.5px;
-  margin-left: 156px;
+  padding-top: 101.5px;
+  padding-left: 156px;
 }
 /* END OF FOOTER SECTION */
