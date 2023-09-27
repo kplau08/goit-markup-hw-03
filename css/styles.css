@@ -106,6 +106,15 @@ ul {
   letter-spacing: 0.32px;
 }
 
+.pages-link:active,
+.pages-link:hover {
+  color: var(--ocean);
+}
+
+.contact-details:hover {
+  color: var(--ocean);
+}
+
 .navigation {
   display: flex;
   height: 72px;
@@ -169,7 +178,7 @@ h1 {
   letter-spacing: 1.12px;
 }
 
-.hero button {
+.order-btn {
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -186,6 +195,10 @@ h1 {
   position: absolute;
   width: 180px;
   margin: 356px 635px 188px;
+}
+
+.order-btn:hover {
+  background-color: var(--ocean);
 }
 /* END OF HERO SECTION */
 
