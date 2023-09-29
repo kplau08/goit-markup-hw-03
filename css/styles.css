@@ -199,6 +199,7 @@ h1 {
 
 .order-btn:hover {
   background-color: var(--ocean);
+  cursor: pointer;
 }
 /* END OF HERO SECTION */
 
